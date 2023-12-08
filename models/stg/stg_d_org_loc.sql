@@ -1,0 +1,1 @@
+select * from dbt_qa_db.dw_lnd.location_master
