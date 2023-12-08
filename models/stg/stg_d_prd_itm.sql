@@ -1,0 +1,1 @@
+select * from dbt_qa_db.DW_LND.ITEM_MASTER
