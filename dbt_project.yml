@@ -37,7 +37,7 @@ models:
       +schema: DWH
     tmp:
       +materialized: table
-      +schema: POC_TMP
+      +schema: TMP
     data_mart:
       +materialized: incremental
       +schema: DATA_MART
