@@ -12,6 +12,7 @@ select
     ITM.ITEM_DESC,
     SLS.TXN_AMT,
     SLS.TXN_QTY,
+    0  AS DSC_AMT,
     current_timestamp AS RCD_INS_TS,
     current_timestamp AS RCD_UPD_TS
 from {{ ref('stg_f_sls_ln_itm_b')}} sls
