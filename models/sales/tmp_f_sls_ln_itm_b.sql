@@ -19,3 +19,4 @@ inner join {{ref('dwh_d_org_loc')}} loc
 on sls.location_id = loc.location_id
 inner join {{ref('dwh_d_prd_itm')}} itm 
 on sls.item_id = itm.item_id
+where 1 = 1
