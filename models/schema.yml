@@ -1,0 +1,20 @@
+
+version: 2
+
+models:  
+  - name: tmp_f_sls_ln_itm_b
+    description: "Temporary Sales"
+    columns:
+      - name: TRANSACTION_ID
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: ITEM_ID
+        tests:
+          - relationships:
+              to: ref('dwh_d_prd_itm')
+              field: item_id
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dwh_d_prd_itm')
+              pk_column_name: item_id
