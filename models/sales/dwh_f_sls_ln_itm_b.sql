@@ -15,7 +15,6 @@ SELECT
     ITEM_DESC,
     TXN_AMT,
     TXN_QTY,
-    DSC_AMT,
     current_timestamp AS RCD_INS_TS,
     current_timestamp AS RCD_UPD_TS
     FROM {{ref('tmp_f_sls_ln_itm_b')}}
@@ -29,7 +28,6 @@ SELECT
     ITEM_DESC,
     TXN_AMT,
     TXN_QTY,
-    DSC_AMT,
     current_timestamp AS RCD_INS_TS,
     current_timestamp AS RCD_UPD_TS
     FROM {{ref('tmp_f_sls_ln_itm_b')}}
