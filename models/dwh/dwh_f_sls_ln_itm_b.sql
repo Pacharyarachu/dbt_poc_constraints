@@ -1,7 +1,6 @@
 {{
      config(
          materialized='incremental',
-         schema='dwh',
          unique_key='TRANSACTION_ID',
          merge_update_columns=['TRANSACTION_DT','LOCATION_ID', 'LOCATION_DESC','ITEM_ID', 'ITEM_DESC','TXN_AMT', 'TXN_QTY', 'RCD_UPD_TS']
      )
