@@ -1,7 +1,6 @@
 {{
      config(
          materialized='incremental',
-         schema='dwh',
          unique_key='LOCATION_ID',
          merge_update_columns=['LOCATION_DESC','RCD_UPD_TS']
      )

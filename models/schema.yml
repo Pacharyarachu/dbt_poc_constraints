@@ -1,6 +1,5 @@
 
 version: 2
-
 models:  
   - name: tmp_f_sls_ln_itm_b
     description: "Temporary Sales"
