@@ -1,2 +1,1 @@
-
-select * from location_master
+select * from {{env_var('DBT_SRC_SCHEMA')}}.location_master
