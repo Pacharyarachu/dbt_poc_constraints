@@ -1,2 +1,2 @@
 
-select * from dw_lnd.location_master
+select * from location_master
