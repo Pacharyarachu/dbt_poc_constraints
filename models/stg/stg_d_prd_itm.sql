@@ -1,1 +1,1 @@
-select * from DW_LND.ITEM_MASTER
+select * from ITEM_MASTER
