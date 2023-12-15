@@ -1,1 +1,1 @@
-select * from DW_LND.ITEM_MASTER
+select * from {{env_var('DBT_SRC_SCHEMA')}}.ITEM_MASTER
